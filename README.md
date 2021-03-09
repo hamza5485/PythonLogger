@@ -16,3 +16,16 @@ log.error("This is an error log")
 log.success("This is a success message")
 
 ``` 
+You may also indent logs by specifying `indent={int}`. This, by default is set to `0`
+```python
+log.info("This message will be indented", indent=1)
+
+>> [2021-03-09T12:53:55.660119][MAIN.PY][SUCCESS] 	This message will be indented
+```
+You can also specify the indent character using `indent_char`:
+```python
+log = Logger(os.path.basename(__file__), indent_char=".")
+log.info("This message will be indented", indent=5)
+
+>> [2021-03-09T12:56:23.943033][MAIN.PY][SUCCESS] .....This message will be indented
+```
