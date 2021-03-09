@@ -20,7 +20,7 @@ You may also indent logs by specifying `indent={int}`. This, by default is set t
 ```python
 log.info("This message will be indented", indent=1)
 ```
-`>> [2021-03-09T12:53:55.660119][MAIN.PY][SUCCESS] 	This message will be indented`
+`>> [2021-03-09T13:02:05.718260][MAIN.PY][INFO] 			This message will be indented`
 
 You can also specify the indent character using `indent_char`:
 ```python
